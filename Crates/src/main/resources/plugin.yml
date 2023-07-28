@@ -1,0 +1,6 @@
+name: Crates
+version: 1.0-SNAPSHOT
+main: dev.razorni.crates.Crates
+author: Razorni
+depend:
+  - iLib

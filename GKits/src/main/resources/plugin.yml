@@ -1,0 +1,6 @@
+name: GKits
+author: Razorni
+version: 1.0-SNAPSHOT
+main: dev.razorni.gkits.GKits
+depend:
+  - iLib

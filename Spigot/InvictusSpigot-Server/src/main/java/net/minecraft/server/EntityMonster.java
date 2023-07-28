@@ -1,0 +1,133 @@
+package net.minecraft.server;
+
+import eu.vortexdev.invictusspigot.config.InvictusConfig;
+import org.bukkit.event.entity.EntityCombustByEntityEvent;
+
+public abstract class EntityMonster extends EntityCreature implements IMonster {
+
+    public EntityMonster(World world) {
+        super(world);
+        this.b_ = 5;
+    }
+
+    public void m() {
+        this.bx();
+        float f = this.c(1.0F);
+
+        if (f > 0.5F) {
+            this.ticksFarFromPlayer += 2;
+        }
+
+        super.m();
+    }
+
+    public void t_() {
+        super.t_();
+        if (this.world.getDifficulty() == EnumDifficulty.PEACEFUL) {
+            this.die();
+        }
+
+    }
+
+    protected String P() {
+        return "game.hostile.swim";
+    }
+
+    protected String aa() {
+        return "game.hostile.swim.splash";
+    }
+
+    public boolean damageEntity(DamageSource damagesource, float f) {
+        if (this.isInvulnerable(damagesource)) {
+            return false;
+        } else return super.damageEntity(damagesource, f);
+    }
+
+    protected String bo() {
+        return "game.hostile.hurt";
+    }
+
+    protected String bp() {
+        return "game.hostile.die";
+    }
+
+    protected String n(int i) {
+        return i > 4 ? "game.hostile.hurt.fall.big" : "game.hostile.hurt.fall.small";
+    }
+
+    public boolean r(Entity entity) {
+        float f = (float) this.getAttributeInstance(GenericAttributes.ATTACK_DAMAGE).getValue();
+        int i = 0;
+
+        if (entity instanceof EntityLiving) {
+            f += EnchantmentManager.a(this.bA(), ((EntityLiving) entity).getMonsterType());
+            i += EnchantmentManager.a(this);
+        }
+
+        boolean flag = entity.damageEntity(DamageSource.mobAttack(this), f);
+
+        if (flag) {
+            if (i > 0) {
+                entity.g(-MathHelper.sin(this.yaw * 3.1415927F / 180.0F) * (float) i * 0.5F, 0.1D, MathHelper.cos(this.yaw * 3.1415927F / 180.0F) * (float) i * 0.5F);
+                this.motX *= 0.6D;
+                this.motZ *= 0.6D;
+            }
+
+            int j = EnchantmentManager.getFireAspectEnchantmentLevel(this);
+
+            if (j > 0) {
+                // CraftBukkit start - Call a combust event when somebody hits with a fire enchanted item
+                EntityCombustByEntityEvent combustEvent = new EntityCombustByEntityEvent(this.getBukkitEntity(), entity.getBukkitEntity(), j * 4);
+                org.bukkit.Bukkit.getPluginManager().callEvent(combustEvent);
+
+                if (!combustEvent.isCancelled()) {
+                    entity.setOnFire(combustEvent.getDuration());
+                }
+                // CraftBukkit end
+            }
+
+            this.a(this, entity);
+        }
+
+        return flag;
+    }
+
+    public float a(BlockPosition blockposition) {
+        return 0.5F - this.world.o(blockposition);
+    }
+
+    protected boolean n_() {
+        if(InvictusConfig.disableLighting)
+            return true;
+        int x = MathHelper.floor(locX), y = MathHelper.floor(boundingBox.b), z = MathHelper.floor(locZ);
+
+        if (this.world.b(EnumSkyBlock.SKY, x, y, z) > this.random.nextInt(32)) {
+            return false;
+        } else {
+            int i = this.world.getLightLevel(x, y, z);
+
+            if (this.world.R()) {
+                int j = this.world.ab();
+
+                this.world.c(10);
+                i = this.world.getLightLevel(x, y, z);
+                this.world.c(j);
+            }
+
+            return i <= this.random.nextInt(8);
+        }
+    }
+
+    public boolean bR() {
+        return this.world.getDifficulty() != EnumDifficulty.PEACEFUL && this.n_() && super.bR();
+    }
+
+    protected void initAttributes() {
+        super.initAttributes();
+        this.getAttributeMap().b(GenericAttributes.ATTACK_DAMAGE);
+    }
+
+    protected boolean ba() {
+        return true;
+    }
+}
