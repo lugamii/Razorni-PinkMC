@@ -1,0 +1,91 @@
+TEAMS:
+  TEAM_SIZE: 5
+  ALLIES: 0
+  MAX_CLAIMS: 3
+  F_STUCK_MAX_MOVE: 5
+
+TEAM_MAP:
+  RADIUS: 25
+
+TEAM_POINTS:
+  DEATH: 5
+  KILLS: 5
+
+WARZONE:
+  WARZONE_NORMAL: 1000
+  WARZONE_NETHER: 500
+  WARZONE_BREAK: 300
+  WARZONE_BREAK_NETHER: 200
+
+TEAM_NAME:
+  MIN_LENGTH: 3
+  MAX_LENGTH: 12
+
+SYSTEM_TEAMS:
+  DENIED_INTERACT:
+    - 'CHEST'
+    - 'TRAPPED_CHEST'
+    - 'TRAP_DOOR'
+    - 'WOOD_DOOR'
+    - 'FENCE_GATE'
+  SAFEZONE: '&a'
+  ROADS: '&6'
+  EVENT: '&9'
+  WARZONE: '&c'
+  WILDERNESS: '&7'
+  ORE_MOUNTAIN: '&3'
+  GLOWSTONE: '&6'
+  CITADEL: '&5'
+
+TEAM_DTR:
+  SOLO_DTR: 1.1
+  PER_PLAYER: 1.1
+  MAX_DTR: 7.2
+  MIN_DTR: -0.9
+  DEATH_DTR: 1.0 # Amount taken from when a player dies
+  REGEN_PER_MIN: 0.1
+  REGEN_TIMER: 45 # Minutes
+  LOW_DTR: 0.25 # what is considered low dtr for the color below
+  COLOR:
+    RAIDABLE: '&4'
+    LOW_DTR: '&e'
+    NORMAL: '&a'
+  SYMBOL:
+    FREEZE: '&c■'
+    REGENERATING: '&a▲'
+    NORMAL: '&a◀'
+
+RELATION_COLOR:
+  TEAMMATE: '&2'
+  ALLIED: '&9'
+  ENEMY: '&c'
+  FOCUSED: '&d'
+  ARCHER_TAG: '&e'
+  PVP_TIMER: '&6'
+  INVINCIBILITY: '&6'
+  KING: '&4'
+  SOTW: '&6'
+  STAFF: '&b'
+  STAFF_PREFIX: '&b[S]'
+  KING_PREFIX: '&4[K]'
+
+CLAIMING:
+  MIN_SIZE: 5
+  MAX_SIZE: 40
+  CLAIM_SEPARATOR: 2 # Amount of blocks claims have to be apart from
+  PRICE_PER_BLOCK: 0.25
+  SELL_MULTIPLIER: 0.8
+  MULTIPLIER_AREA: 250 # Amount of blocks a claim needs before it's multiplied
+  MULTIPLIER_CLAIM: 500 # Amount of claims times this will be added onto the price
+  CLAIM_WAND:
+    NAME: '&a&oClaiming Wand'
+    TYPE: 'WOOD_HOE'
+    LORE:
+      - '&eRight/Left Click &6Block'
+      - '&b- &fSelect claim''s corners'
+      - ''
+      - '&eRight Click &6Air'
+      - '&b- &fCancel current claim'
+      - ''
+      - '&9Crouch &eLeft Click &6Block/Air'
+      - '&b- &fPurchase current claim'

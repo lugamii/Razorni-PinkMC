@@ -1,0 +1,19 @@
+RECLAIMS:
+  IRON: # permission is azurite.reclaim.iron
+    PRIORITY: 80 # if player has permission to this and another, the one with the higher priority will be given.
+    COMMANDS:
+      - 'cr givekey %player% iron 3'
+      - 'partnerpackage give %player% 3'
+      - 'broadcast &f%player% &ehas redeemed the &f&lIron &erank rewards using &7/reclaim&e.'
+  GOLD: # permission is azurite.reclaim.gold
+    PRIORITY: 90 # if player has permission to this and another, the one with the higher priority will be given.
+    COMMANDS:
+      - 'cr givekey %player% iron 5'
+      - 'partnerpackage give %player% 5'
+      - 'broadcast &6%player% &ehas redeemed the &6&lGold &erank rewards using &7/reclaim&e.'
+  AZURITE: # permission is azurite.reclaim.azurite
+    PRIORITY: 100 # if player has permission to this and another, the one with the higher priority will be given.
+    COMMANDS:
+      - 'cr givekey %player% iron 7'
+      - 'partnerpackage give %player% 7'
+      - 'broadcast &d%player% &ehas redeemed the &d&lAzurite &erank rewards using &7/reclaim&e.'

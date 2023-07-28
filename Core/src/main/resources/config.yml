@@ -1,0 +1,34 @@
+SERVER_NAME: "RankCoreDev"
+MONGO:
+  DATABASE: "Dev"
+  HOST: "127.0.0.1"
+  PORT: 27017
+  AUTHENTICATION:
+    ENABLED: false
+    USERNAME: ""
+    PASSWORD: ""
+REDIS:
+  CHANNEL: "Dev"
+  HOST: "127.0.0.1"
+  PORT: 6379
+  AUTHENTICATION:
+    ENABLED: false
+    PASSWORD: ""
+TAB: true
+PUNISHMENTS:
+  BROADCAST: "&r{target} &ahas been {context} by &r{sender}"
+  BROADCAST_SILENT: "&r{target} &ahas been &fsilently&a {context} by &r{sender}"
+  BLACKLISTED: "&cYour account is blacklisted from the Orbit Network.\n\n&cThis punishment cannot be appealed."
+  BAN:
+    KICK: "&cYour account is {context} from the Orbit Network.{temporary}\n\n&cIf you feel this punishment is unjust, you may appeal at:\n&ehttps://www.orbit.rip"
+    TEMPORARY: "\n&cThis punishment expires in &e{time-remaining}&c."
+  KICK:
+    KICK: "&cYou were kicked by a staff member.\nReason: &e{reason}"
+COMMON_ERRORS:
+  FAILED_TO_LOAD_PROFILE: "&cFailed to load your profile. Try again later."
+  COULD_NOT_RESOLVE_PLAYER: "&cCould not resolve player information..."
+  PLAYER_NOT_FOUND: "&cA player with that name could not be found."
+  RANK_NOT_FOUND: "&cA rank with that name could not be found."
+
+GRANT_ADDED_LOGGING: "https://discord.com/api/webhooks/904302278654169089/WOwFjHwDG1H8bVxMSBa9v2otZ-nojkTYoCNcNt39UheouLVxhJ7gEQGGkoDDF6ReNy4x"
+GRANT_REMOVED_LOGGING: "https://discord.com/api/webhooks/904302278654169089/WOwFjHwDG1H8bVxMSBa9v2otZ-nojkTYoCNcNt39UheouLVxhJ7gEQGGkoDDF6ReNy4x"

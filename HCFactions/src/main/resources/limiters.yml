@@ -1,0 +1,172 @@
+# Contains some potions which aren't in 1.7-1.8 (ignore them)
+# UPGRADEABLE = Increased amplifier. EXTENDED = Increased Duration.
+POTIONS:
+  SPEED:
+    ENABLED: true
+    UPGRADABLE: true
+    EXTENDED: true
+  SLOW:
+    ENABLED: true
+    UPGRADABLE: false
+    EXTENDED: true
+  FAST_DIGGING:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  SLOW_DIGGING:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  INCREASE_DAMAGE:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  HEAL:
+    ENABLED: true
+    UPGRADABLE: true
+    EXTENDED: true
+  HARM:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  JUMP:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  CONFUSION:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  REGENERATION:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  DAMAGE_RESISTANCE:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  FIRE_RESISTANCE:
+    ENABLED: true
+    UPGRADABLE: true
+    EXTENDED: true
+  WATER_BREATHING:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  INVISIBILITY:
+    ENABLED: true
+    UPGRADABLE: true
+    EXTENDED: true
+  BLINDNESS:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  NIGHT_VISION:
+    ENABLED: true
+    UPGRADABLE: true
+    EXTENDED: true
+  HUNGER:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  WEAKNESS:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  POISON:
+    ENABLED: true
+    UPGRADABLE: false
+    EXTENDED: false
+  WITHER:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  HEALTH_BOOST:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  ABSORPTION:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  SATURATION:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  GLOWING:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  LEVITATION:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  LUCK:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  UNLUCK:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  SLOW_FALLING:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  CONDUIT_POWER:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  DOLPHINS_GRACE:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  BAD_OMEN:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+  HERO_OF_THE_VILLAGE:
+    ENABLED: false
+    UPGRADABLE: true
+    EXTENDED: true
+
+# Contains some enchants which aren't in 1.7-1.8 (ignore them)
+# 0 to disable, -1 for no change
+ENCHANTMENTS:
+  PROTECTION_FIRE: 0
+  PROTECTION_PROJECTILE: 0
+  PROTECTION_FALL: -1
+  PROTECTION_ENVIRONMENTAL: 1
+  PROTECTION_EXPLOSIONS: 0
+  DAMAGE_ALL: 1
+  DAMAGE_ARTHROPODS: -1
+  DAMAGE_UNDEAD: -1
+  ARROW_FIRE: 0
+  ARROW_DAMAGE: 4
+  ARROW_INFINITE: 1
+  ARROW_KNOCKBACK: 0
+  DURABILITY: -1
+  KNOCKBACK: 0
+  WATER_WORKER: 0
+  DEPTH_STRIDER: -1
+  DIG_SPEED: -1
+  THORNS: 0
+  SILK_TOUCH: -1
+  FIRE_ASPECT: 0
+  LOOT_BONUS_MOBS: -1
+  LOOT_BONUS_BLOCKS: -1
+  LURE: -1
+  LUCK: -1
+  OXYGEN: 0
+  SOUL_SPEED: 0
+  LOYALTY: 0
+  VANISHING_CURSE: 0
+  BINDING_CURSE: 0
+  FROST_WALKER: 0
+  PIERCING: 0
+  MULTISHOT: 0
+  CHANNELING: 0
+  SWEEPING_EDGE: 0
+  RIPTIDE: 0
+  QUICK_CHARGE: 0
+  IMPALING: 0

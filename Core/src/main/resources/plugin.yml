@@ -1,0 +1,5 @@
+main: dev.razorni.core.Core
+name: Core
+author: Razorni
+version: 1.0-SNAPSHOT
+depend: [Vault]

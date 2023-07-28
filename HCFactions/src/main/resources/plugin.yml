@@ -1,0 +1,15 @@
+name: HCFactions
+main: dev.razorni.hcfactions.HCF
+version: 1.0-SNAPSHOT
+author: Razorni
+softdepend:
+  - LunarClient-API
+  - ViaVersion
+  - ProtocolSupport
+  - Vault
+  - Core
+commands:
+  enchant:
+    aliases: [ levelup, ench ]
+    usage: /<command> <enchantment> <level>
+    description: Enchants the item in hand.

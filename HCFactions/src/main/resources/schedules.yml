@@ -1,0 +1,60 @@
+# TimeZone for scheduler, Use https://garygregory.wordpress.com/2013/06/18/what-are-the-java-timezone-ids/
+TIME_ZONE: 'America/New_York'
+
+SCHEDULES:
+  HOURLY:
+    GLOWSTONE:
+      TIME: '00'
+      NAME: '&6Glowstone Mountain Reset' # Name shown in /schedules, NONE to disable
+      COMMANDS:
+        - 'broadcast &6[Glowstone Mountain] &9Glowstone Mountain &ehas been reset.'
+        - 'mountain respawn Glowstone'
+    ORE_MOUNTAIN:
+      TIME: '00'
+      NAME: '&3Ore Mountain Reset' # Name shown in /schedules, NONE to disable
+      COMMANDS:
+        - 'broadcast &3[Ore Mountain] &9Ore Mountain &ehas been reset.'
+        - 'mountain respawn OreMountain'
+  DAILY:
+    REBOOT_REMINDER:
+      TIME: '23:30'
+      NAME: 'NONE' # Name shown in /schedules, NONE to disable
+      COMMANDS:
+        - 'broadcast &4&l[REBOOT] &eServer will be rebooting in 30mins.'
+        - 'customtimer create reboot &4&lReboot 30m'
+    REBOOT_REMINDER2:
+      TIME: '23:45'
+      NAME: 'NONE' # Name shown in /schedules, NONE to disable
+      COMMANDS:
+        - 'broadcast &4&l[REBOOT] &eServer will be rebooting in 15mins.'
+    REBOOT_REMINDER3:
+      TIME: '23:55'
+      NAME: 'NONE' # Name shown in /schedules, NONE to disable
+      COMMANDS:
+        - 'broadcast &4&l[REBOOT] &eServer will be rebooting in 5mins.'
+    REBOOT_REMINDER4:
+      TIME: '23:59'
+      NAME: 'NONE' # Name shown in /schedules, NONE to disable
+      COMMANDS:
+        - 'save-all'
+        - 'azurite forcesave'
+        - 'broadcast &4&l[REBOOT] &eServer will be rebooting in 1min. Saving data now!'
+    REBOOT:
+      TIME: '00:00'
+      NAME: '&4Reboot'
+      COMMANDS:
+        - 'restart'
+  NORMAL:
+    SOTW:
+      DAY: SATURDAY
+      TIME: '15:00'
+      NAME: '&aSOTW'
+      COMMANDS:
+        - 'sotw start 2h'
+        - 'whitelist off'
+    CITADEL:
+      DAY: SUNDAY
+      TIME: '15:00'
+      NAME: '&5Citadel'
+      COMMANDS:
+        - 'koth start Citadel'

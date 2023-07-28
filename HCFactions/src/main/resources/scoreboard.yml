@@ -1,0 +1,106 @@
+SCOREBOARD_INFO:
+  TITLE: '&d&lAzurite &7┃ &fHCF' # If changer not enabled
+  LINES: '&7&m--------------------'
+
+TITLE_CONFIG:
+  CHANGER_ENABLED: true
+  CHANGER_TICKS: 190 # Less for faster changing, more for slower changing
+  # Create as many as you want
+  CHANGES:
+    - '&d&lAzurite &7┃ &fHCF'
+    - '&d&lAzurite &7┃ &fHCF'
+    - '&d&lAzurite &7┃ &fHCF'
+    - '&d&lAzurite &7┃ &fHCF'
+    - '&d&lAzurite &7┃ &fHCF'
+    - '&d&lAzurite &7┃ &fHCF'
+    - '&d&lAzurite &7┃ &fHCF'
+    - '&d&lAzurite &7┃ &fHCF'
+    - '&d&lAzurite &7┃ &fHCF'
+    - '&d&lAzurite &7┃ &fHCF'
+    - '&5&lA&d&lzurite &7┃ &fHCF'
+    - '&d&lA&5&lz&d&lurite &7┃ &fHCF'
+    - '&d&lAz&5&lu&d&lrite &7┃ &fHCF'
+    - '&d&lAzu&5&lr&d&lite &7┃ &fHCF'
+    - '&d&lAzur&5&li&d&lte &7┃ &fHCF'
+    - '&d&lAzuri&5&lt&d&le &7┃ &fHCF'
+    - '&d&lAzurit&5&le &7┃ &fHCF'
+    - '&5&lAzurite &7┃ &fHCF'
+    - '&f&lAzurite &7┃ &fHCF'
+
+KITS_INFO:
+  KILLS: '&d&lKills&7: &c'
+  DEATHS: '&d&lDeaths&7: &c'
+  BALANCE: '' # Empty to disable
+
+DEATHBAN_INFO:
+  TIME: '&c&lDeathban&7: &c'
+  LIVES: '&a&lLives&7: &c'
+
+PLAYER_TIMERS:
+  SOTW: '&d&lSOTW&7: &c'
+  SOTW_OFF: '&d&l&mSOTW&r&7: &c'
+  CLAIM: '&6&lClaim&7: &c'
+  INVINCIBILITY: '&a&lInvincibility&7: &c'
+  PVP_TIMER: '&a&lPvP Timer&7: &c'
+  COMBAT_TAG: '&c&lSpawn Tag&7: &c'
+  ENDER_PEARL: '&e&lEnderpearl&7: &c'
+  APPLE: '&6&lApple&7: &c'
+  GAPPLE: '&e&lGapple&7: &c'
+  STUCK: '&4&lStuck&7: &c'
+  HQ: '&9&lHome&7: &9'
+  ARCHER_TAG: '&6&lArcher Tag&7: &c'
+  WARMUP: '&b&lClass Warmup&7: &c'
+  LOGOUT: '&4&lLogout&7: &c'
+  ACTIVE_CLASS: '&d&lClass&7: &c'
+  KOTH: '%color%%koth%&7: &c'
+  SPAWN: '&a&lSpawn&7: &c'
+  ABILITIES: '' # %ability%&7: &c if you want per ability cooldown
+  GLOBAL_ABILITIES: '&d&lPartner Item&7: &c'
+
+BARD_CLASS:
+  BARD_ENERGY: '&4&lBard Energy&7: &c'
+  BARD_EFFECT: '&b&lBard Effect&7: &c'
+
+MAGE_CLASS:
+  MAGE_ENERGY: '&4&lMage Energy&7: &c'
+  MAGE_EFFECT: '&b&lMage Effect&7: &c'
+
+ROGUE_CLASS:
+  BACKSTAB: '&8&lBackstab&7: &c'
+
+MINER_CLASS:
+  INVIS: '&7&lInvisible&7: &c'
+  DIAMONDS: '&b&lDiamonds&7: &c'
+
+KILL_THE_KING:
+  ENABLED: true
+  LINES:
+    - '&4&lKing&7: &f%king%'
+    - '&4&lReward&7: &f%reward%'
+    - '&4&lHealth&7: &c%health%❤'
+    - '&7&m--------------------'
+
+TEAM_FOCUS:
+  ENABLED: true
+  LINES:
+    - '&7&m--------------------'
+    - '&d&lTeam&7: &f%team%'
+    - '&d&lDTR&7: &f%dtr-color%%dtr%%dtr-symbol%'
+    - '&d&lOnline&7: &f%online%'
+
+STAFF_MODE:
+  ENABLED: true
+  VANISH_NO_MODMODE: # They are vanished but not in staff mode.
+    - '&d&lStaff Mode'
+    - '&fVanished&7: &7%vanished%'
+    - '&7&m--------------------'
+  MOD_MODE:
+    - '&d&lStaff Mode'
+    - '&fVanished&7: &7%vanished%'
+    - '&fPlayers&7: &7%players%'
+    - '&fStaff Online&7: &7%staff%'
+    - '&fTPS&7: &7%tps%'
+    - '&7&m--------------------'
+
+CUSTOM_TIMERS:
+  FORMAT: '%displayName%&7: &c'

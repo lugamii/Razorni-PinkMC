@@ -1,0 +1,420 @@
+JOIN-MESSAGE:
+  - ""
+  - "&fWelcome, %colorrank%%player%"
+  - ""
+  - "&6&l┃ &fStore: &6store.orange.cc"
+  - "&6&l┃ &fDiscord: &6discord.orange.cc"
+  - "&6&l┃ &fNameMC: &6namemc.orange.cc"
+  - " "
+  - "  &aTo navigate through servers use Server Selector."
+  - ""
+
+TITLES:
+  ACTION-BAR:
+    ENABLED: true
+    CHANGES:
+      - "&6&l┃ &fTo skip queue purchase rank at &6store.orange.cc"
+      - "&6&l┃ &fThere is currently &6&l25% OFF SALE &fat our store"
+      - "&6&l┃ &fJoin our &6discord.orange.cc &ffor updates and more"
+
+SCOREBOARD_INFO:
+  TITLE: '§5§lPurple §7┃ §fHub' # If changer not enabled
+  LINES: ' '
+
+TITLE_CONFIG:
+  CHANGER_ENABLED: true
+  CHANGER_TICKS: 190 # Less for faster changing, more for slower changing
+  # Create as many as you want
+  CHANGES:
+    - '§6§lORANGE'
+    - '§6§lORANGE'
+    - '§6§lORANGE'
+    - '§6§lORANGE'
+    - '§6§lORANGE'
+    - '§f§lORANGE'
+    - '§6§lO§f§lRANGE'
+    - '§6§lOR§f§lANGE'
+    - '§6§lORA§f§lNGE'
+    - '§6§lORAN§f§lGE'
+    - '§6§lORANG§f§lE'
+    - '§6§lORANGE'
+    - '§f§lORANGE'
+    - '§6§lORANGE'
+    - '§f§lORANGE'
+    - '§6§lORANGE'
+
+FOOTER_CONFIG:
+  CHANGER_ENABLED: true
+  CHANGER_TICKS: 3500
+  CHANGES:
+    - "&7&ostore.orange.cc"
+    - "&7&odiscord.orange.cc"
+    - "&7&onamemc.orange.cc"
+
+LINES:
+  BLACKLISTED:
+    - "      &7&o%localtime_time_d MMM, HH:mm:ss%  "
+    - " "
+    - "&4&lBLACKLISTED"
+    - "&6&l┃ &fReason: &6%reason%"
+    - "&6&l┃ &fExpires: &6Never"
+    - " "
+    - "&6&l┃ &fRank: %rank%"
+    - "&6&l┃ &fPlayers: &6%bungee_total%"
+    - "&6&l┃ &fCoins: &6%coins% ⛁"
+    - " "
+    - "%footer%"
+  BANNED:
+    - "      &7&o%localtime_time_d MMM, HH:mm:ss%  "
+    - " "
+    - "&4&lBANNED"
+    - "&6&l┃ &fReason: &6%reason%"
+    - "&6&l┃ &fExpires: &6%expires%"
+    - "&6&l┃ &fAppeal: &6Discord"
+    - " "
+    - "&6&l┃ &fRank: %rank%"
+    - "&6&l┃ &fPlayers: &6%bungee_total%"
+    - "&6&l┃ &fCoins: &6%coins% ⛁"
+    - " "
+    - "%footer%"
+  QUEUED:
+    - "    &7&o%localtime_time_d MMM, HH:mm:ss%  "
+    - " "
+    - "&6&l┃ &fRank: %rank%"
+    - "&6&l┃ &fPlayers: &6%bungee_total%"
+    - "&6&l┃ &fCoins: &6%coins% ⛁"
+    - " "
+    - "&6&l┃ &fQueue: &6%server%"
+    - "&6&l┃ &fPosition: &6#%position%&f / &6#%size%"
+    - " "
+    - "%footer%"
+  NORMAL:
+    - "    &7&o%localtime_time_d MMM, HH:mm:ss%  "
+    - " "
+    - "&6&l┃ &fRank: %rank%"
+    - "&6&l┃ &fPlayers: &6%bungee_total%"
+    - "&6&l┃ &fCoins: &6%coins% ⛁"
+    - " "
+    - "%footer%"
+
+TABLIST_INFO:
+  LEFT:
+    1:
+      TEXT: ""
+      SKIN: ""
+    2:
+      TEXT: ""
+      SKIN: ""
+    3:
+      TEXT: ""
+      SKIN: ""
+    4:
+      TEXT: "&6Store"
+      SKIN: "%store%"
+    5:
+      TEXT: "&6&l┃ &fstore.orange.cc"
+      SKIN: ""
+    6:
+      TEXT: ""
+      SKIN: ""
+    7:
+      TEXT: ""
+      SKIN: ""
+    8:
+      TEXT: ""
+      SKIN: ""
+    9:
+      TEXT: "&6HCF&7: &f(%bungee_HCF%)"
+      SKIN: "%bow%"
+    10:
+      TEXT: "&6&l┃ &fStatus: %offline%"
+      SKIN: "%offline%"
+    11:
+      TEXT: "&6&l┃ &fLives: &60"
+      SKIN: ""
+    12:
+      TEXT: "&6&l┃ &fDeathban: &6None"
+      SKIN: ""
+    13:
+      TEXT: ""
+      SKIN: ""
+    14:
+      TEXT: ""
+      SKIN: ""
+    15:
+      TEXT: ""
+      SKIN: ""
+    16:
+      TEXT: ""
+      SKIN: ""
+    17:
+      TEXT: ""
+      SKIN: ""
+    18:
+      TEXT: ""
+      SKIN: ""
+    19:
+      TEXT: ""
+      SKIN: ""
+    20:
+      TEXT: ""
+      SKIN: ""
+  CENTER:
+    1:
+      TEXT: "%title%"
+      SKIN: "%crown%"
+    2:
+      TEXT: "&6&l┃ &fOnline: &6%online% / 1000   "
+      SKIN: ""
+    3:
+      TEXT: ""
+      SKIN: ""
+    4:
+      TEXT: "&6Your Rank"
+      SKIN: "%information%"
+    5:
+      TEXT: "%rank%"
+      SKIN: "%ranksquare%"
+    6:
+      TEXT: ""
+      SKIN: ""
+    7:
+      TEXT: "&6Modalities"
+      SKIN: "%ping%"
+    8:
+      TEXT: ""
+      SKIN: ""
+    9:
+      TEXT: "&6KitMap&7: &f(%bungee_Kits%)"
+      SKIN: "%enderchest%"
+    10:
+      TEXT: "&6&l┃ &fStatus: %statuskits%"
+      SKIN: "%statuskits%"
+    11:
+      TEXT: "&6&l┃ &fCoins: &6%coins% ⛁"
+      SKIN: ""
+    12:
+      TEXT: ""
+      SKIN: ""
+    13:
+      TEXT: ""
+      SKIN: ""
+    14:
+      TEXT: ""
+      SKIN: ""
+    15:
+      TEXT: ""
+      SKIN: ""
+    16:
+      TEXT: ""
+      SKIN: ""
+    17:
+      TEXT: ""
+      SKIN: ""
+    18:
+      TEXT: ""
+      SKIN: ""
+    19:
+      TEXT: ""
+      SKIN: ""
+    20:
+      TEXT: ""
+      SKIN: ""
+  RIGHT:
+    1:
+      TEXT: ""
+      SKIN: ""
+    2:
+      TEXT: ""
+      SKIN: ""
+    3:
+      TEXT: ""
+      SKIN: ""
+    4:
+      TEXT: "&6Discord"
+      SKIN: "%discord%"
+    5:
+      TEXT: "&6&l┃ &fdiscord.orange.cc"
+      SKIN: ""
+    6:
+      TEXT: ""
+      SKIN: ""
+    7:
+      TEXT: ""
+      SKIN: ""
+    8:
+      TEXT: ""
+      SKIN: ""
+    9:
+      TEXT: "&6Practice&7: &f(%bungee_Practice%)"
+      SKIN: "%diamond_shield%"
+    10:
+      TEXT: "&6&l┃ &fStatus: %offline%"
+      SKIN: "%offline%"
+    11:
+      TEXT: "&6&l┃ &fGlobal Elo: &61000"
+      SKIN: ""
+    12:
+      TEXT: ""
+      SKIN: ""
+    13:
+      TEXT: ""
+      SKIN: ""
+    14:
+      TEXT: ""
+      SKIN: ""
+    15:
+      TEXT: ""
+      SKIN: ""
+    16:
+      TEXT: ""
+      SKIN: ""
+    17:
+      TEXT: ""
+      SKIN: ""
+    18:
+      TEXT: ""
+      SKIN: ""
+    19:
+      TEXT: ""
+      SKIN: ""
+    20:
+      TEXT: ""
+      SKIN: ""
+  FARRIGHT:
+    1:
+      TEXT: ""
+      SKIN: ""
+    2:
+      TEXT: ""
+      SKIN: ""
+    3:
+      TEXT: ""
+      SKIN: ""
+    4:
+      TEXT: ""
+      SKIN: ""
+    5:
+      TEXT: ""
+      SKIN: ""
+    6:
+      TEXT: ""
+      SKIN: ""
+    7:
+      TEXT: ""
+      SKIN: ""
+    8:
+      TEXT: ""
+      SKIN: ""
+    9:
+      TEXT: ""
+      SKIN: ""
+    10:
+      TEXT: ""
+      SKIN: ""
+    11:
+      TEXT: ""
+      SKIN: ""
+    12:
+      TEXT: ""
+      SKIN: ""
+    13:
+      TEXT: ""
+      SKIN: ""
+    14:
+      TEXT: ""
+      SKIN: ""
+    15:
+      TEXT: ""
+      SKIN: ""
+    16:
+      TEXT: ""
+      SKIN: ""
+    17:
+      TEXT: ""
+      SKIN: ""
+    18:
+      TEXT: ""
+      SKIN: ""
+    19:
+      TEXT: ""
+      SKIN: ""
+    20:
+      TEXT: ""
+      SKIN: ""
+  OFFLINE-LOADING:
+    CHANGER_TICKS: 350
+    CHANGES:
+      - "&cOffline"
+      - "&cOffline."
+      - "&cOffline.."
+      - "&cOffline..."
+  TAB-FOOTER_CONFIG:
+    CHANGER_TICKS: 3500
+    CHANGES:
+      - "&6Store: &f&ostore.orange.cc"
+      - "&6Twitter: &f&o@OrangeNetwork"
+      - "&6Discord: &f&odiscord.orange.cc"
+  CHANGER_TICKS-TITLE: 190
+  CHANGES-TITLE:
+    - '§6§lORANGE'
+    - '§6§lORANGE'
+    - '§6§lORANGE'
+    - '§6§lORANGE'
+    - '§6§lORANGE'
+    - '§f§lORANGE'
+    - '§6§lO§f§lRANGE'
+    - '§6§lOR§f§lANGE'
+    - '§6§lORA§f§lNGE'
+    - '§6§lORAN§f§lGE'
+    - '§6§lORANG§f§lE'
+    - '§6§lORANGE'
+    - '§f§lORANGE'
+    - '§6§lORANGE'
+    - '§f§lORANGE'
+    - '§6§lORANGE'
+  HEADER:
+    - ' '
+    - '%header% &7| &f%online% / 1000'
+    - '&6&l75% Off &favaliable at &6&o&lstore.orange.cc'
+    - ' '
+  FOOTER:
+    - ' '
+    - '&fYou are playing &6Hub &fon &6orange.cc'
+    - '%footer%'
+    - ' '
+
+QUEUE_SERVERS:
+  - Kits
+QUEUE_MESSAGES:
+  INQUEUE:
+    - ''
+    - '&7You are &d%position% out of %inqueue% &7in the &d%server%'
+    - ''
+  HIGHER_QUEUE: '&eSomeone with higher queue priority has joined the queue!'
+  LEAVE_QUEUE: '&7You are no longer in queue for &d%server%&7.'
+  PAUSED: '&d%server% &7queue has been &cpaused'
+  UNPAUSED: '&d%server% &7queue has been &aunpaused'
+
+ENDERBUTT:
+  NAME: "&6EnderButt"
+  SLOT: 5
+
+SELECTOR:
+  NAME: "&6Server Selector"
+  SLOT: 3
+  HCF-ITEM-SKULLOWNER: "Razorni"
+  HCF-ITEM-SLOT: 13
+  HCF-ITEM-NAME: "&6Kits"
+  HCF-LORE:
+    - " "
+    - "&fPractice your skills with unlimited kit applies"
+    - "&fkit editor, refill, shop and lot of features"
+    - " "
+    - " &6&l┃ &fPlayers: &6%bungee_Kits% / 500 &7(%queued% in queue)"
+    - " &6&l┃ &fStatus: %pinger_online_localhost:25567%"
+    - " "
+    - "&aClick to join the queue.."
+
+
+

@@ -1,0 +1,8 @@
+name: Hub
+version: ${project.version}
+main: dev.razorni.hub.Hub
+api-version: 1.13
+authors: [Razorni]
+description: Custom Hub Core made by Razorni
+depends:
+  - Core

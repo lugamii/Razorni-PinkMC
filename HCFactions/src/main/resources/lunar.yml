@@ -1,0 +1,53 @@
+LUNAR_API:
+  ENABLED: true
+  FIX_1_8_HIT_DELAY: true # Viper does this aswell, it fixes the hit delay for lunar client only!
+
+NAMETAGS:
+  NORMAL: '&6[%name% &7┃ %dtr-color%%dtr%%dtr-symbol%&6]'
+  TEAM_TOP: '&6[%pos% %name% &7┃ %dtr-color%%dtr%%dtr-symbol%&6]'
+
+LUNAR_PREFIXES:
+  ENABLED: true
+  TEAMS:
+    ONE: '&4①'
+    TWO: '&c②'
+    THREE: '&f③'
+  PLAYER:
+    ONE: '&6#1'
+    TWO: '&2#2'
+    THREE: '&7#3'
+
+# Just google '<color> hex code'
+WAYPOINTS:
+  SPAWN:
+    ENABLED: true
+    NAME: 'Spawn'
+    COLOR: '#00FF00'
+  HQ:
+    ENABLED: true
+    NAME: 'HQ'
+    COLOR: '#0000FF'
+  FOCUS:
+    ENABLED: true
+    NAME: '%team%''s HQ'
+    COLOR: '#FFC0CB'
+  RALLY_POINT:
+    ENABLED: true
+    NAME: 'Rally Point'
+    COLOR: '#FF0000'
+  GLOWSTONE:
+    ENABLED: true
+    NAME: 'Glowstone Mountain'
+    COLOR: '#FFD700'
+  ORE_MOUNTAIN:
+    ENABLED: true
+    NAME: 'Ore Mountain'
+    COLOR: '#00FFFF'
+  KOTH:
+    ENABLED: true
+    NAME: '%name% KoTH'
+    COLOR: '#0000FF'
+  END_EXIT: # This is in the end world.
+    ENABLED: true
+    NAME: 'End Exit'
+    COLOR: '#9400D3'
